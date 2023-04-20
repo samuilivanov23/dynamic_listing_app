@@ -35,3 +35,4 @@ C:\Users\Samuil Ivanov\PS_Coruse_Project\DynamicObjectListing\DynamicObjectListi
 C:\Users\Samuil Ivanov\PS_Coruse_Project\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\DynamicObjectListing.pdb
 C:\Users\Samuil Ivanov\PS_Coruse_Project\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\DynamicObjectListing.genruntimeconfig.cache
 C:\Users\Samuil Ivanov\PS_Coruse_Project\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\ref\DynamicObjectListing.dll
+C:\Users\Samuil Ivanov\PS_Coruse_Project\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\App.baml

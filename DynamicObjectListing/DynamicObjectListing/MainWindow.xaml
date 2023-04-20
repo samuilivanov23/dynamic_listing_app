@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:DynamicObjectListing" 
         xmlns:view="clr-namespace:DynamicObjectListing.View"
         mc:Ignorable="d"
-        Title="Objects And Attributs Selection" Height="450" Width="800">
-    <Grid>
+        Title="Objects And Attributs Selection" Height="450" Width="800"
+        FontSize="14">
+    <Grid Margin="25">
         <view:ObjectsAttributesSelectionView />
     </Grid>
 </Window>
