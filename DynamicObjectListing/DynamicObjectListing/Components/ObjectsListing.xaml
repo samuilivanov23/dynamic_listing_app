@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:DynamicObjectListing.Components"
+             xmlns:local="clr-namespace:DynamicObjectListing.Components" 
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -12,8 +12,32 @@
                 <Grid.OpacityMask>
                     <VisualBrush Visual="{Binding ElementName=border}" />
                 </Grid.OpacityMask>
+                
                 <Border x:Name="border" Background="White" CornerRadius="10"/>
-                <ListView BorderThickness="0" />
+                
+                <ListView BorderThickness="0" ItemsSource="{Binding ObjectsListingItemViewModels}">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Padding="10 10" TextBlock.FontSize="16">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Grid.Column="0" Text="{Binding ObjectType}" />
+                                    <RibbonCheckBox Grid.Column="1" Name="SelectObject" IsChecked="{Binding IsObjectSelectedForDisplay}" />
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </Grid>
         </Border>
     </Grid>

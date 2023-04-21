@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "jF1Df78iWVZvKZZw4DUEAsraLy5YXXX8JDSvDgdXaW330fB+8+dkQwBpzHqs+BF/eQcK0akL/KMeK+KrhxyC0Q==",
+  "dgSpecHash": "EbLzfIoiqyFMP87x8QYk4SYgeGLxQWse4MMxV+sqcLPPVE6lMYPoKFxIEV3tyr5WZeWzJwX3Rero0yL1mRmW3g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project\\DynamicObjectListing\\DynamicObjectListing\\DynamicObjectListing.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Samuil Ivanov\\.nuget\\packages\\dropdownmenu.wpf\\1.0.0\\dropdownmenu.wpf.1.0.0.nupkg.sha512",
     "C:\\Users\\Samuil Ivanov\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Samuil Ivanov\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Samuil Ivanov\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

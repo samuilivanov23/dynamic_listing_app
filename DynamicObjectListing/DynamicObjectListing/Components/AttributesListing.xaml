@@ -9,13 +9,46 @@
     <Grid>
         <Border BorderBrush="{StaticResource BorderPrimary}" BorderThickness="1" SnapsToDevicePixels="True" CornerRadius="10" Padding="15">
             <Grid Grid.IsSharedSizeScope="True">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto" />
+                
+                <ListView BorderThickness="0" ItemsSource="{Binding AttributesListingItemViewModels}">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Padding="10 10" TextBlock.FontSize="16">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Grid.Column="0" Text="{Binding AttributeName}" />
+                                    <RibbonCheckBox Grid.Column="1" Name="SelectAttribute" IsChecked="{Binding IsAttributeSelectedForDisplay}"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            
+                <!--<Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
+                
+                <Grid Grid.Row="0" Margin="0 20 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" SharedSizeGroup="AttributeName" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
 
-                <TextBlock Grid.Row="0" FontSize="24" Text="Object Attributes" />
+                    <TextBlock Grid.Column="0" FontWeight="Bold" Text="Attribute: " />
+
+                    <TextBlock Grid.Column="1" Margin="20 0 0 0" Text="Attr1" />
+                </Grid>
 
                 <Grid Grid.Row="1" Margin="0 20 0 0">
                     <Grid.ColumnDefinitions>
@@ -23,21 +56,11 @@
                         <ColumnDefinition Width="auto" />
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Grid.Column="0" FontWeight="Bold" Text="Attribute 1 Name" />
+                    <TextBlock Grid.Column="0" FontWeight="Bold" Text="Attribute: " />
 
-                    <TextBlock Grid.Column="1" Margin="20 0 0 0" Text="Is Selected?" />
-                </Grid>
-
-                <Grid Grid.Row="2" Margin="0 20 0 0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="auto" SharedSizeGroup="AttributeName" />
-                        <ColumnDefinition Width="auto" />
-                    </Grid.ColumnDefinitions>
-
-                    <TextBlock Grid.Column="0" FontWeight="Bold" Text="Attribute 2 Name" />
-
-                    <TextBlock Grid.Column="1" Margin="20 0 0 0" Text="Is Selected?" />
-                </Grid>
+                    <TextBlock Grid.Column="1" Margin="20 0 0 0" Text="Attr2" />
+                </Grid>-->
+                
             </Grid>
         </Border>
     </Grid>

@@ -5,10 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DynamicObjectListing" 
         xmlns:view="clr-namespace:DynamicObjectListing.View"
+        xmlns:vms="clr-namespace:DynamicObjectListing.ViewModel"
         mc:Ignorable="d"
         Title="Objects And Attributs Selection" Height="450" Width="800"
         FontSize="14">
     <Grid Margin="25">
-        <view:ObjectsAttributesSelectionView />
+        <Grid.Resources>
+            <DataTemplate DataType="{x:Type vms:ObjectsAttributesSelectionViewModel}">
+                <view:ObjectsAttributesSelectionView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vms:AttributesSelectionViewModel}">
+                <view:AttributesSelectionView />
+            </DataTemplate>
+        </Grid.Resources>
+
+        <ContentControl Content="{Binding CurrentViewModel}" />
+        <!--<view:ObjectsAttributesSelectionView />-->
     </Grid>
 </Window>

@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "DropdownMenu.WPF/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/DropdownMenuControl.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/DropdownMenuControl.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "EntityFramework/6.4.4": {
         "type": "package",
         "dependencies": {
@@ -337,6 +349,18 @@
     }
   },
   "libraries": {
+    "DropdownMenu.WPF/1.0.0": {
+      "sha512": "7S90a70go9Cko9y5Ugs3YEev+EboKs8uicIw5clxa2uTho+/pAHAx7NRq0HbAsVAKAobAqL9goAlI/elRbNsxA==",
+      "type": "package",
+      "path": "dropdownmenu.wpf/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dropdownmenu.wpf.1.0.0.nupkg.sha512",
+        "dropdownmenu.wpf.nuspec",
+        "lib/netcoreapp3.1/DropdownMenuControl.dll"
+      ]
+    },
     "EntityFramework/6.4.4": {
       "sha512": "yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
       "type": "package",
@@ -1075,6 +1099,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "DropdownMenu.WPF >= 1.0.0",
       "EntityFramework >= 6.4.4"
     ]
   },
@@ -1117,6 +1142,10 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
+          "DropdownMenu.WPF": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "EntityFramework": {
             "target": "Package",
             "version": "[6.4.4, )"
