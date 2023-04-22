@@ -19,7 +19,7 @@ namespace DynamicObjectListing.ViewModel
 
         public ObjectsAttributesSelectionViewModel(NavigationStore navigationStore)
         {
-            ObjectsListingViewModel = new ObjectsListingViewModel();
+            ObjectsListingViewModel = new ObjectsListingViewModel(navigationStore);
             //AttributesListingViewModel = new AttributesListingViewModel();
             ContinueToObjectAttributesCommand = new NavigateCommand(navigationStore);
         }

@@ -9,20 +9,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace DynamicObjectListing.Model
 {
     [Table( "athletes" )]
-    public class Athlete : AbstractEntity
+    public class Athlete
     {
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity), Key()]
         public Int64 Id { get; set; }
         public string FirstName { get; set; }
-
         public string MiddleName { get; set; }
-
         public string LastName { get; set; }
-
         public int ActivitiesCount { get; set; }
-
         public int Followers { get; set; }
-
         public int Following { get; set; }
         public override string ToString()
         {

@@ -12,32 +12,50 @@
                 <Grid.OpacityMask>
                     <VisualBrush Visual="{Binding ElementName=border}" />
                 </Grid.OpacityMask>
-                
-                <Border x:Name="border" Background="White" CornerRadius="10"/>
-                
-                <ListView BorderThickness="0" ItemsSource="{Binding ObjectsListingItemViewModels}">
-                    <ListView.ItemContainerStyle>
-                        <Style TargetType="ListViewItem">
-                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                        </Style>
-                    </ListView.ItemContainerStyle>
-                    
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <Border Padding="10 10" TextBlock.FontSize="16">
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="auto" />
-                                    </Grid.ColumnDefinitions>
 
-                                    <TextBlock Grid.Column="0" Text="{Binding ObjectType}" />
-                                    <RibbonCheckBox Grid.Column="1" Name="SelectObject" IsChecked="{Binding IsObjectSelectedForDisplay}" />
-                                </Grid>
-                            </Border>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Border x:Name="border" Background="White" CornerRadius="10"/>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <!--<ColumnDefinition Width="auto" />-->
+                    </Grid.ColumnDefinitions>
+
+                    <!--<TextBlock Grid.Column="0" FontSize="32" Text="Objects Selection" />-->
+
+                    <Button Grid.Column="0" FontSize="16" Content="Continue To Object Attributes" Click="Button_Click" Command="{Binding ContinueToObjectAttributesCommand}" />
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <ListView Name="objectListToDisplay" BorderThickness="0" ItemsSource="{Binding ObjectsListingItemViewModels}">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </ListView.ItemContainerStyle>
+
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Border Padding="10 10" TextBlock.FontSize="16">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="auto" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock Grid.Column="0" Text="{Binding ObjectType}" />
+                                        <!--<RibbonCheckBox Grid.Column="1" Name="SelectObject" IsChecked="{Binding IsObjectSelectedForDisplay}" />-->
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
             </Grid>
         </Border>
     </Grid>

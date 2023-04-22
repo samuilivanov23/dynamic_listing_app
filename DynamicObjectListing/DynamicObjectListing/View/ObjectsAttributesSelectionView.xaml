@@ -17,12 +17,12 @@
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="auto" />
+                <!--<ColumnDefinition Width="auto" />-->
             </Grid.ColumnDefinitions>
 
             <TextBlock Grid.Column="0" FontSize="32" Text="Objects Selection" />
 
-            <Button Grid.Column="1" FontSize="16" Content="Continue To Object Attributes" Command="{Binding ContinueToObjectAttributesCommand}" />
+            <!--<Button Grid.Column="1" FontSize="16" Content="Continue To Object Attributes" Command="{Binding ContinueToObjectAttributesCommand}" />-->
         </Grid>
 
         <Grid Grid.Row="1" Margin="0 20 0 0">
