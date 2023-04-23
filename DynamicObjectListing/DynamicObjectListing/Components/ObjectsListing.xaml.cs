@@ -1,4 +1,5 @@
 ﻿using DynamicObjectListing.InstantiationManager;
+using DynamicObjectListing.Model;
 using DynamicObjectListing.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -30,35 +31,10 @@ namespace DynamicObjectListing.Components
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine(objectListToDisplay.SelectedItem);
+            var objectToDisplay = (ObjectsListingItemViewModel)objectListToDisplay.SelectedItem;
+            var objectToDisplayModel = InstanceMapperToModels.MapInstanceToModel(objectToDisplay.ObjectType);
+            var objectToDisplayAllAttributes = objectToDisplayModel.GetType().GetProperties().Select(property => property.Name);
 
-            var types = Assembly.GetExecutingAssembly().GetTypes()
-                .Where(t => t.IsClass && t.Namespace == "DynamicObjectListing.InstantiationManager")
-                .ToList();
-
-            var typeToTest = "segments";
-
-            foreach(var type in types) 
-            {
-                if (type.GetInterfaces().Any(t => t.IsGenericType && t.GetGenericTypeDefinition() == typeof(ICreator<>))) 
-                {
-                    var newInstance = Activator.CreateInstance(type);
-
-                    var canHandleMethod = type.GetMethod(nameof(AthleteCreator.CanHandle));
-
-                    bool canHandleResult = (bool)canHandleMethod.Invoke(newInstance, new object[] { typeToTest });
-
-                    if (canHandleResult) 
-                    {
-                        Console.WriteLine($"Found class that can handle type \"{typeToTest}\": {newInstance.GetType().FullName}");
-
-                        var createMethod = type.GetMethod(nameof(AthleteCreator.Create));
-                        var objectToDisplay = createMethod.Invoke(newInstance, new object[] { });
-
-                        break;
-                    }
-                }
-            }
         }
     }
 }

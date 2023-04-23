@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DynamicObjectListing.Model
 {
     [Table("activity_sessions")]
-    public class ActivitySession
+    public class ActivitySession : IBaseModel
     {
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity), Key()]
         public Int64 Id { get; set; }

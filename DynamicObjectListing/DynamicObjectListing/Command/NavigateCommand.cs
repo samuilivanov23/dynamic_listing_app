@@ -1,4 +1,5 @@
-﻿using DynamicObjectListing.Store;
+﻿using DynamicObjectListing.InstantiationManager;
+using DynamicObjectListing.Store;
 using DynamicObjectListing.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,12 @@ namespace DynamicObjectListing.Command
 
         public override void Execute(object? parameter)
         {
-            _navigationStore.CurrentViewModel = new AttributesSelectionViewModel(_navigationStore);
+            var objectToDisplay = (ObjectsListingItemViewModel)parameter;
+            var objectToDisplayModel = InstanceMapperToModels.MapInstanceToModel(objectToDisplay.ObjectType);
+            var objectToDisplayAllAttributes = objectToDisplayModel.GetType().GetProperties().Select(property => property.Name).ToList();
+
+            _navigationStore.CurrentViewModel = new AttributesSelectionViewModel(_navigationStore, objectToDisplayAllAttributes);
+
         }
     }
 }

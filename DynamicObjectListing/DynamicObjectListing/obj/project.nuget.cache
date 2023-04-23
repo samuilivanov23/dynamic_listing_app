@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EbLzfIoiqyFMP87x8QYk4SYgeGLxQWse4MMxV+sqcLPPVE6lMYPoKFxIEV3tyr5WZeWzJwX3Rero0yL1mRmW3g==",
+  "dgSpecHash": "5ovXE5FIh5BVG/i2O7B7PGu0KyOOSSKDJqIthisSdOSClAQ1OI5CZwGgIVRO6oGEccVg8D1NF2euPZ+OT5d+aw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project\\DynamicObjectListing\\DynamicObjectListing\\DynamicObjectListing.csproj",
+  "projectFilePath": "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project2\\DynamicObjectListing\\DynamicObjectListing\\DynamicObjectListing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Samuil Ivanov\\.nuget\\packages\\dropdownmenu.wpf\\1.0.0\\dropdownmenu.wpf.1.0.0.nupkg.sha512",
     "C:\\Users\\Samuil Ivanov\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",

@@ -13,17 +13,14 @@ namespace DynamicObjectListing.ViewModel
         private readonly ObservableCollection<AttributesListingItemViewModel> _attributesListingItemViewModels;
         public IEnumerable<AttributesListingItemViewModel> AttributesListingItemViewModels => _attributesListingItemViewModels;
 
-        public AttributesListingViewModel()
+        public AttributesListingViewModel(List<string> objectToDisplayAllAttributes)
         {
             _attributesListingItemViewModels = new ObservableCollection<AttributesListingItemViewModel>();
 
-            _attributesListingItemViewModels.Add(new AttributesListingItemViewModel("FirstName", false));
-            _attributesListingItemViewModels.Add(new AttributesListingItemViewModel("MiddleName", false));
-            _attributesListingItemViewModels.Add(new AttributesListingItemViewModel("LastName", false));
-            _attributesListingItemViewModels.Add(new AttributesListingItemViewModel("ActivitiesCount", false));
-            _attributesListingItemViewModels.Add(new AttributesListingItemViewModel("Followers", false));
-            _attributesListingItemViewModels.Add(new AttributesListingItemViewModel("Following", false));
+            foreach (var attribute in objectToDisplayAllAttributes) 
+            {
+                _attributesListingItemViewModels.Add(new AttributesListingItemViewModel(attribute, false));
+            }
         }
-
     }
 }

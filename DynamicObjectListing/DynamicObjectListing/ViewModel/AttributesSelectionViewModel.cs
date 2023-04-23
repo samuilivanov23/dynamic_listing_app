@@ -16,11 +16,11 @@ namespace DynamicObjectListing.ViewModel
 
         public ICommand? DisplayFullObjectDataCommand { get; }
 
-        public AttributesSelectionViewModel(NavigationStore navigationStore)
+        public AttributesSelectionViewModel(NavigationStore navigationStore, List<string> objectToDisplayAllAttributes)
         {
             //ObjectsListingViewModel = new ObjectsListingViewModel();
-            AttributesListingViewModel = new AttributesListingViewModel();
-            DisplayFullObjectDataCommand = new NavigateCommand(navigationStore);
+            AttributesListingViewModel = new AttributesListingViewModel(objectToDisplayAllAttributes);
+            //DisplayFullObjectDataCommand = new NavigateCommand(navigationStore, objectToDisplayAllAttributes);
         }
     }
 }

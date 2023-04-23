@@ -23,12 +23,9 @@
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
-                        <!--<ColumnDefinition Width="auto" />-->
                     </Grid.ColumnDefinitions>
 
-                    <!--<TextBlock Grid.Column="0" FontSize="32" Text="Objects Selection" />-->
-
-                    <Button Grid.Column="0" FontSize="16" Content="Continue To Object Attributes" Click="Button_Click" Command="{Binding ContinueToObjectAttributesCommand}" />
+                    <Button Grid.Column="0" FontSize="16" Content="Continue To Object Attributes" Click="Button_Click" Command="{Binding ContinueToObjectAttributesCommand}" CommandParameter="{Binding ElementName=objectListToDisplay, Path=SelectedItem}" />
                 </Grid>
 
                 <Grid Grid.Row="1">
@@ -49,7 +46,6 @@
                                         </Grid.ColumnDefinitions>
 
                                         <TextBlock Grid.Column="0" Text="{Binding ObjectType}" />
-                                        <!--<RibbonCheckBox Grid.Column="1" Name="SelectObject" IsChecked="{Binding IsObjectSelectedForDisplay}" />-->
                                     </Grid>
                                 </Border>
                             </DataTemplate>

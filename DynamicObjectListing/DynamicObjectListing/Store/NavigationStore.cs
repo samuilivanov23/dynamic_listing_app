@@ -20,6 +20,15 @@ namespace DynamicObjectListing.Store
             }
         }
 
+        private List<string> _objectToDisplayAllAttributes;
+
+        public List<string> ObjectToDisplayAllAttributes;
+
+        public NavigationStore() 
+        {
+            ObjectToDisplayAllAttributes = new List<string>();
+        }
+
         public event Action CurrentViewModelChanged;
         private void OnCurrentViewModelChanged()
         {

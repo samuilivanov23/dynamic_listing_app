@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace DynamicObjectListing.Model
 {
     [Table( "athletes" )]
-    public class Athlete
+    public class Athlete : IBaseModel
     {
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity), Key()]
         public Int64 Id { get; set; }

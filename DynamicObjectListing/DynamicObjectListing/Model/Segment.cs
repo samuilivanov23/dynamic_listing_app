@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DynamicObjectListing.Model
 {
     [Table("segments")]
-    public class Segment
+    public class Segment : IBaseModel
     {
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity), Key()]
         public Int64 Id { get; set; }

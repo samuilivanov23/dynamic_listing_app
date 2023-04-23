@@ -1109,11 +1109,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project\\DynamicObjectListing\\DynamicObjectListing\\DynamicObjectListing.csproj",
+      "projectUniqueName": "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project2\\DynamicObjectListing\\DynamicObjectListing\\DynamicObjectListing.csproj",
       "projectName": "DynamicObjectListing",
-      "projectPath": "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project\\DynamicObjectListing\\DynamicObjectListing\\DynamicObjectListing.csproj",
+      "projectPath": "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project2\\DynamicObjectListing\\DynamicObjectListing\\DynamicObjectListing.csproj",
       "packagesPath": "C:\\Users\\Samuil Ivanov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project\\DynamicObjectListing\\DynamicObjectListing\\obj\\",
+      "outputPath": "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project2\\DynamicObjectListing\\DynamicObjectListing\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Samuil Ivanov\\AppData\\Roaming\\NuGet\\NuGet.Config",
