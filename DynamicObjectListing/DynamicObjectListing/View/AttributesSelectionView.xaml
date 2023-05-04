@@ -17,21 +17,16 @@
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="auto" />
             </Grid.ColumnDefinitions>
 
             <TextBlock Grid.Column="0" FontSize="32" Text="Attributes Selection" />
-
-            <Button Grid.Column="1" FontSize="16" Content="Display Full Object Data" Command="{Binding DisplayFullObjectDataCommand}" />
         </Grid>
 
         <Grid Grid.Row="1" Margin="0 20 0 0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <!--<ColumnDefinition Width="2*" />-->
             </Grid.ColumnDefinitions>
 
-            <!--<components:ObjectsListing Grid.Column="0" DataContext="{Binding ObjectsListingViewModel}" />-->
             <components:AttributesListing Grid.Column="0" Margin="20 0 0 0" DataContext="{Binding AttributesListingViewModel}" />
         </Grid>
     </Grid>

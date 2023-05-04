@@ -13,10 +13,16 @@
     <Compile Update="Components\ObjectsListing.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Components\SingleObjectListing.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\AttributesSelectionView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\ObjectsAttributesSelectionView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SingleObjectSelectionView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -27,6 +33,9 @@
     <Page Update="Components\ObjectsListing.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Components\SingleObjectListing.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -34,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ObjectsAttributesSelectionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SingleObjectSelectionView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

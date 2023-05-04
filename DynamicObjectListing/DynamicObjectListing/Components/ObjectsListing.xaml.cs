@@ -28,13 +28,5 @@ namespace DynamicObjectListing.Components
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var objectToDisplay = (ObjectsListingItemViewModel)objectListToDisplay.SelectedItem;
-            var objectToDisplayModel = InstanceMapperToModels.MapInstanceToModel(objectToDisplay.ObjectType);
-            var objectToDisplayAllAttributes = objectToDisplayModel.GetType().GetProperties().Select(property => property.Name);
-
-        }
     }
 }

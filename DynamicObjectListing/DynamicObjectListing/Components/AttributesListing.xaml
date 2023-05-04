@@ -9,30 +9,51 @@
     <Grid>
         <Border BorderBrush="{StaticResource BorderPrimary}" BorderThickness="1" SnapsToDevicePixels="True" CornerRadius="10" Padding="15">
             <Grid Grid.IsSharedSizeScope="True">
+                <Grid.OpacityMask>
+                    <VisualBrush Visual="{Binding ElementName=border}" />
+                </Grid.OpacityMask>
 
-                <ListView BorderThickness="0" ItemsSource="{Binding AttributesListingItemViewModels}">
-                    <ListView.ItemContainerStyle>
-                        <Style TargetType="ListViewItem">
-                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                        </Style>
-                    </ListView.ItemContainerStyle>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
 
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <Border Padding="10 10" TextBlock.FontSize="16">
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="auto" />
-                                    </Grid.ColumnDefinitions>
+                <Border x:Name="border" Background="White" CornerRadius="10"/>
 
-                                    <TextBlock Grid.Column="0" Text="{Binding AttributeName}" />
-                                    <RibbonCheckBox Grid.Column="1" Name="SelectAttribute" IsChecked="{Binding IsAttributeSelectedForDisplay}"/>
-                                </Grid>
-                            </Border>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!--<Button Grid.Column="0" FontSize="16" Content="Continue To Object Attributes" Command="{Binding ContinueToObjectAttributesCommand}" CommandParameter="{Binding ElementName=objectListToDisplay, Path=SelectedItem}" />-->
+                    <Button Grid.Column="0" FontSize="16" Content="Display Full Object Data" Command="{Binding ContinueToSingleObjectListCommand}"/>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <ListView Name="attributesListToDisplay" BorderThickness="0" ItemsSource="{Binding AttributesListingItemViewModels}">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </ListView.ItemContainerStyle>
+
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Border Padding="10 10" TextBlock.FontSize="16">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="auto" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock Grid.Column="0" Text="{Binding AttributeName}" />
+                                        <RibbonCheckBox Grid.Column="1" Name="checkAttribute" IsChecked="{Binding IsAttributeSelectedForDisplay, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
             </Grid>
         </Border>
     </Grid>

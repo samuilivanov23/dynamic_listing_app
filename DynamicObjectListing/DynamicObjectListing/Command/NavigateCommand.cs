@@ -24,8 +24,7 @@ namespace DynamicObjectListing.Command
             var objectToDisplayModel = InstanceMapperToModels.MapInstanceToModel(objectToDisplay.ObjectType);
             var objectToDisplayAllAttributes = objectToDisplayModel.GetType().GetProperties().Select(property => property.Name).ToList();
 
-            _navigationStore.CurrentViewModel = new AttributesSelectionViewModel(_navigationStore, objectToDisplayAllAttributes);
-
+            _navigationStore.CurrentViewModel = new AttributesSelectionViewModel(_navigationStore, objectToDisplayAllAttributes, objectToDisplayModel);
         }
     }
 }

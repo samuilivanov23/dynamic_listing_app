@@ -1,4 +1,5 @@
 ﻿using DynamicObjectListing.Command;
+using DynamicObjectListing.Model;
 using DynamicObjectListing.Store;
 using System;
 using System.Collections.Generic;
@@ -14,13 +15,10 @@ namespace DynamicObjectListing.ViewModel
         //public ObjectsListingViewModel ObjectsListingViewModel { get; }
         public AttributesListingViewModel AttributesListingViewModel { get; }
 
-        public ICommand? DisplayFullObjectDataCommand { get; }
-
-        public AttributesSelectionViewModel(NavigationStore navigationStore, List<string> objectToDisplayAllAttributes)
+        public AttributesSelectionViewModel(NavigationStore navigationStore, List<string> objectToDisplayAllAttributes, IBaseModel objectToDisplayModel)
         {
             //ObjectsListingViewModel = new ObjectsListingViewModel();
-            AttributesListingViewModel = new AttributesListingViewModel(objectToDisplayAllAttributes);
-            //DisplayFullObjectDataCommand = new NavigateCommand(navigationStore, objectToDisplayAllAttributes);
+            AttributesListingViewModel = new AttributesListingViewModel(navigationStore, objectToDisplayAllAttributes, objectToDisplayModel);
         }
     }
 }

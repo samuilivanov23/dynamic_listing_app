@@ -17,6 +17,9 @@
             <DataTemplate DataType="{x:Type vms:AttributesSelectionViewModel}">
                 <view:AttributesSelectionView />
             </DataTemplate>
+            <DataTemplate DataType="{x:Type vms:SingleObjectSelectionViewModel}">
+                <view:SingleObjectSelectionView />
+            </DataTemplate>
         </Grid.Resources>
 
         <ContentControl Content="{Binding CurrentViewModel}" />

@@ -25,7 +25,7 @@
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
-                    <Button Grid.Column="0" FontSize="16" Content="Continue To Object Attributes" Click="Button_Click" Command="{Binding ContinueToObjectAttributesCommand}" CommandParameter="{Binding ElementName=objectListToDisplay, Path=SelectedItem}" />
+                    <Button Grid.Column="0" FontSize="16" Content="Continue To Object Attributes" Command="{Binding ContinueToObjectAttributesCommand}" CommandParameter="{Binding ElementName=objectListToDisplay, Path=SelectedItem}" />
                 </Grid>
 
                 <Grid Grid.Row="1">

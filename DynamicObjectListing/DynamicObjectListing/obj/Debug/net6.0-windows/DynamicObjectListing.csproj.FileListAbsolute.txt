@@ -80,3 +80,7 @@ C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectList
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\DynamicObjectListing.csproj.CopyComplete
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\DynamicObjectListing.genruntimeconfig.cache
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\ref\DynamicObjectListing.dll
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\Components\SingleObjectListing.g.cs
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\View\SingleObjectSelectionView.g.cs
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\Components\SingleObjectListing.baml
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\View\SingleObjectSelectionView.baml

@@ -15,13 +15,13 @@ namespace DynamicObjectListing.ViewModel
         public ObjectsListingViewModel ObjectsListingViewModel { get; }
         //public AttributesListingViewModel AttributesListingViewModel { get; }
 
-        public ICommand? ContinueToObjectAttributesCommand { get; }
+        //public ICommand? ContinueToObjectAttributesCommand { get; }
 
         public ObjectsAttributesSelectionViewModel(NavigationStore navigationStore)
         {
             ObjectsListingViewModel = new ObjectsListingViewModel(navigationStore);
             //AttributesListingViewModel = new AttributesListingViewModel();
-            ContinueToObjectAttributesCommand = new NavigateCommand(navigationStore);
+            //ContinueToObjectAttributesCommand = new NavigateCommand(navigationStore);
         }
     }
 }
