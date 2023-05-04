@@ -22,6 +22,9 @@
     <Compile Update="View\ObjectsAttributesSelectionView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\SingleObjectSegmentSelectionView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\SingleObjectSelectionView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -43,6 +46,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ObjectsAttributesSelectionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SingleObjectSegmentSelectionView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\SingleObjectSelectionView.xaml">

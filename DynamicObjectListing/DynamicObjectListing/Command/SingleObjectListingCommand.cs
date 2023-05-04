@@ -27,8 +27,28 @@ namespace DynamicObjectListing.Command
         {
             ObservableCollection<AttributesListingItemViewModel> selectedAttributes = new ObservableCollection<AttributesListingItemViewModel>(_attributesListingItemViewModels.Where(attr => attr.IsAttributeSelectedForDisplay == true).ToList());
 
-            //_navigationStore.CurrentViewModel = new SingleObjectListingViewModel(_navigationStore, selectedAttributes, _objectToDisplayModel);
-            _navigationStore.CurrentViewModel = new SingleObjectSelectionViewModel(_navigationStore, selectedAttributes, _objectToDisplayModel);
+            var _objectToDisplayModeTypeName = _objectToDisplayModel.GetType().Name;
+
+            if (_objectToDisplayModeTypeName  == "Athlete")
+            {
+                //new instance of AthleteObjectListingViewModel
+                //observableCollection of Athlete objects
+                _navigationStore.CurrentViewModel = new SingleObjectListingViewModel(_navigationStore, selectedAttributes, (Athlete)_objectToDisplayModel);
+            }
+            else if (_objectToDisplayModeTypeName == "ActivitySession")
+            {
+                //new instance of ActivitySessionObjectListingViewModel
+                //observableCollection of ActivitySession objects
+                _navigationStore.CurrentViewModel = new SingleObjectListingViewModel(_navigationStore, selectedAttributes, (ActivitySession)_objectToDisplayModel);
+            }
+            else if (_objectToDisplayModeTypeName == "Segment")
+            {
+                //new instance of SegmentObjectListingViewModel
+                //observableCollection of Segment objects
+                _navigationStore.CurrentViewModel = new SingleObjectSegmentListingViewModel(_navigationStore, selectedAttributes, (Segment)_objectToDisplayModel);
+            }
+
+            //_navigationStore.CurrentViewModel = new SingleObjectSelectionViewModel(_navigationStore, selectedAttributes, _objectToDisplayModel);
         }
     }
 }

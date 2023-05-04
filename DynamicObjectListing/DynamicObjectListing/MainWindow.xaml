@@ -20,6 +20,9 @@
             <DataTemplate DataType="{x:Type vms:SingleObjectSelectionViewModel}">
                 <view:SingleObjectSelectionView />
             </DataTemplate>
+            <DataTemplate DataType="{x:Type vms:SingleObjectSegmentListingViewModel}">
+                <view:SingleObjectSegmentSelectionView />
+            </DataTemplate>
         </Grid.Resources>
 
         <ContentControl Content="{Binding CurrentViewModel}" />

@@ -84,3 +84,5 @@ C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectList
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\View\SingleObjectSelectionView.g.cs
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\Components\SingleObjectListing.baml
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\View\SingleObjectSelectionView.baml
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\View\SingleObjectSegmentSelectionView.g.cs
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\View\SingleObjectSegmentSelectionView.baml

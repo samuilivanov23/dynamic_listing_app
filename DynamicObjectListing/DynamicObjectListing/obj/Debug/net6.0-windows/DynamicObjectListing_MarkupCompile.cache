@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\App.xaml
-71212713960
+81656953458
 
-37-2138042390
+41341491082
 1981291507816
-Components\AttributesListing.xaml;Components\ObjectsListing.xaml;Components\SingleObjectListing.xaml;MainWindow.xaml;View\AttributesSelectionView.xaml;View\ObjectsAttributesSelectionView.xaml;View\SingleObjectSelectionView.xaml;
+Components\AttributesListing.xaml;Components\ObjectsListing.xaml;Components\SingleObjectListing.xaml;MainWindow.xaml;View\AttributesSelectionView.xaml;View\ObjectsAttributesSelectionView.xaml;View\SingleObjectSegmentSelectionView.xaml;View\SingleObjectSelectionView.xaml;
 
 False
 

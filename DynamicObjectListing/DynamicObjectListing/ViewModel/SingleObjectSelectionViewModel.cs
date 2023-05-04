@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace DynamicObjectListing.ViewModel
 {
+    //potentially for remove
     public class SingleObjectSelectionViewModel : BaseViewModel
     {
         public SingleObjectListingViewModel SingleObjectListingViewModel { get; }
@@ -19,12 +20,14 @@ namespace DynamicObjectListing.ViewModel
             {
                 //new instance of AthleteObjectListingViewModel
                 //observableCollection of Athlete objects
+                navigationStore.CurrentViewModel = new SingleObjectListingViewModel(navigationStore, selectedAttributes, objectToDisplayModel);
                 SingleObjectListingViewModel = new SingleObjectListingViewModel(navigationStore, selectedAttributes, objectToDisplayModel);
             }
             else if (objectToDisplayModel.GetType().Name == "ActivitySession")
             {
                 //new instance of ActivitySessionObjectListingViewModel
                 //observableCollection of ActivitySession objects
+                navigationStore.CurrentViewModel = new SingleObjectListingViewModel(navigationStore, selectedAttributes, objectToDisplayModel);
                 SingleObjectListingViewModel = new SingleObjectListingViewModel(navigationStore, selectedAttributes, objectToDisplayModel);
             }
             else if (objectToDisplayModel.GetType().Name == "Segment")
