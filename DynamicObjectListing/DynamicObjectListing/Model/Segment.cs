@@ -17,6 +17,16 @@ namespace DynamicObjectListing.Model
         public int BestEffortTimeMinutes { get; set; }
         public string StartLocation { get; set; }
         public string EndLocation { get; set; }
+
+        public Segment() { }
+        public Segment(Int64 id, double length, int bestEffortTimeMinutes, string startLocation, string endLocation) 
+        {
+            this.Id = id;
+            this.Length = length;
+            this.BestEffortTimeMinutes = bestEffortTimeMinutes;
+            this.StartLocation = startLocation;
+            this.EndLocation = endLocation;
+        }
         public override string ToString()
         {
             return Length + BestEffortTimeMinutes+ ", Start Location: " + StartLocation + ", End Location: " + EndLocation;

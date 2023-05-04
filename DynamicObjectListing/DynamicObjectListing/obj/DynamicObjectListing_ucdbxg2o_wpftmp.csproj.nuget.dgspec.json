@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project2\\DynamicObjectListing\\DynamicObjectListing\\DynamicObjectListing.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project2\\DynamicObjectListing\\DynamicObjectListing\\DynamicObjectListing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project2\\DynamicObjectListing\\DynamicObjectListing\\DynamicObjectListing.csproj",
+        "projectName": "DynamicObjectListing",
+        "projectPath": "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project2\\DynamicObjectListing\\DynamicObjectListing\\DynamicObjectListing.csproj",
+        "packagesPath": "C:\\Users\\Samuil Ivanov\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samuil Ivanov\\PS_Coruse_Project2\\DynamicObjectListing\\DynamicObjectListing\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Samuil Ivanov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "DropdownMenu.WPF": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -15,7 +15,24 @@ namespace DynamicObjectListing.ViewModel
 
         public SingleObjectSelectionViewModel(NavigationStore navigationStore, ObservableCollection<AttributesListingItemViewModel> selectedAttributes, IBaseModel objectToDisplayModel)
         {
-            SingleObjectListingViewModel = new SingleObjectListingViewModel(navigationStore, selectedAttributes, objectToDisplayModel);
+            if (objectToDisplayModel.GetType().Name == "Athlete")
+            {
+                //new instance of AthleteObjectListingViewModel
+                //observableCollection of Athlete objects
+                SingleObjectListingViewModel = new SingleObjectListingViewModel(navigationStore, selectedAttributes, objectToDisplayModel);
+            }
+            else if (objectToDisplayModel.GetType().Name == "ActivitySession")
+            {
+                //new instance of ActivitySessionObjectListingViewModel
+                //observableCollection of ActivitySession objects
+                SingleObjectListingViewModel = new SingleObjectListingViewModel(navigationStore, selectedAttributes, objectToDisplayModel);
+            }
+            else if (objectToDisplayModel.GetType().Name == "Segment")
+            {
+                //new instance of SegmentObjectListingViewModel
+                //observableCollection of Segment objects
+                SingleObjectListingViewModel = new SingleObjectListingViewModel(navigationStore, selectedAttributes, objectToDisplayModel);
+            }
         }
     }
 }

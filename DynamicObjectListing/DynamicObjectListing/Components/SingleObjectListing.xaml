@@ -30,7 +30,7 @@
                 </Grid>
 
                 <Grid Grid.Row="1">
-                    <DataGrid Name="SingleObjectListingGrid" ItemsSource="{Binding SingleObjectListingItemViewModels}" AutoGeneratingColumn="OnAutoGeneratingColumn">
+                    <DataGrid Name="SingleObjectListingGrid" ItemsSource="{Binding SingleObjectListingItemViewModels}">
                         <!--<DataGrid.Columns>
                             <DataGridTextColumn Visibility="{Binding Data.ShowThisColumnFlag, Source={StaticResource Proxy}, Converter={StaticResource BoolToCollapsed}}" Binding="{Binding }"
                         </DataGrid.Columns>-->
