@@ -1,4 +1,5 @@
 ﻿using DynamicObjectListing.Model;
+using DynamicObjectListing.Model.Databse;
 using DynamicObjectListing.Store;
 using System;
 using System.Collections.Generic;
@@ -20,13 +21,7 @@ namespace DynamicObjectListing.ViewModel
         public SingleObjectSegmentListingViewModel(NavigationStore navigationStore, ObservableCollection<AttributesListingItemViewModel> selectedAttributes, IBaseModel objectToDisplayModel)
         {
             _selectedAttributes = selectedAttributes;
-            _singleObjectSegmentListingItemViewModels = new ObservableCollection<Segment>
-            {
-                new Segment(1, 12.4, 20, "start1", "end1"),
-                new Segment(2, 13.4, 21, "start2", "end2"),
-                new Segment(3, 14.4, 22, "start3", "end3"),
-                new Segment(4, 15.4, 23, "start4", "end4")
-            };
+            _singleObjectSegmentListingItemViewModels = new ObservableCollection<Segment>(new DatabaseManager().GetSegments());
         }
     }
 }

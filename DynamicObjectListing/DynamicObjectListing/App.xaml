@@ -1,14 +1,8 @@
 ﻿<Application x:Class="DynamicObjectListing.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:DynamicObjectListing" 
-             xmlns:namespace="clr-namespace:DynamicObjectListing.ColumnVisibilityManager">
+             xmlns:local="clr-namespace:DynamicObjectListing">
     <Application.Resources>
-        <!--<ResourceDictionary>
-            <namespace:BoolToVisibilityConverter x:Key="BoolToCollapsed" TrueValue="Visible" FalseValue="Collapsed" />
-            <namespace:BindingProxy x:Key="Proxy" Data="{Binding}" />
-        </ResourceDictionary>-->
-        
         <SolidColorBrush x:Key="BorderPrimary" Color="#1c1c1c" />
 
         <Style TargetType="Button">
