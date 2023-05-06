@@ -13,15 +13,9 @@ namespace DynamicObjectListing.ViewModel
     public class ObjectsAttributesSelectionViewModel : BaseViewModel
     {   
         public ObjectsListingViewModel ObjectsListingViewModel { get; }
-        //public AttributesListingViewModel AttributesListingViewModel { get; }
-
-        //public ICommand? ContinueToObjectAttributesCommand { get; }
-
         public ObjectsAttributesSelectionViewModel(NavigationStore navigationStore)
         {
             ObjectsListingViewModel = new ObjectsListingViewModel(navigationStore);
-            //AttributesListingViewModel = new AttributesListingViewModel();
-            //ContinueToObjectAttributesCommand = new NavigateCommand(navigationStore);
         }
     }
 }

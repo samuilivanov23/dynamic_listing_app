@@ -17,6 +17,7 @@ namespace DynamicObjectListing.ViewModel
         private readonly ObservableCollection<AttributesListingItemViewModel> _attributesListingItemViewModels;
         public IEnumerable<AttributesListingItemViewModel> AttributesListingItemViewModels => _attributesListingItemViewModels;
         public ICommand? ContinueToSingleObjectListCommand { get; }
+        public ICommand? ReturnToObjectSelectionCommand { get; }
 
         public AttributesListingViewModel(NavigationStore navigationStore, List<string> objectToDisplayAllAttributes, IBaseModel objectToDisplayModel)
         {
@@ -28,6 +29,7 @@ namespace DynamicObjectListing.ViewModel
             }
 
             ContinueToSingleObjectListCommand = new SingleObjectListingCommand(navigationStore, _attributesListingItemViewModels, objectToDisplayModel);
+            ReturnToObjectSelectionCommand = new ReturnToObjectSelectionCommand(navigationStore);
         }
     }
 }

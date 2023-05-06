@@ -25,11 +25,9 @@ namespace DynamicObjectListing
         protected override void OnStartup(StartupEventArgs e)
         {
             _navigationStore.CurrentViewModel = new ObjectsAttributesSelectionViewModel(_navigationStore);
-            //_navigationStore.CurrentViewModel = new AttributesSelectionViewModel(_navigationStore);
 
             MainWindow = new MainWindow()
             {
-                //DataContext = new ObjectsAttributesSelectionViewModel(_navigationStore)
                 DataContext = new MainViewModel(_navigationStore)
             };
             MainWindow.Show();

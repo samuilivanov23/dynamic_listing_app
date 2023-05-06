@@ -23,9 +23,11 @@
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
-                    <Button Grid.Column="0" FontSize="16" Content="Display Object Data" Command="{Binding ContinueToSingleObjectListCommand}"/>
+                    <Button Grid.Column="0" FontSize="16" Content="Return To Object Selection" Command="{Binding ReturnToObjectSelectionCommand}"/>
+                    <Button Grid.Column="1" FontSize="16" Content="Display Object Data" Command="{Binding ContinueToSingleObjectListCommand}"/>
                 </Grid>
 
                 <Grid Grid.Row="1">

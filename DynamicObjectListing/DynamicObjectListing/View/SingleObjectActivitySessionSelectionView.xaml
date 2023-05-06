@@ -40,6 +40,16 @@
                         <Border x:Name="border" Background="White" CornerRadius="10"/>
 
                         <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Button Grid.Column="0" FontSize="16" Content="Return To Object Selection" Command="{Binding ReturnToObjectSelectionCommand}"/>
+                            <Button Grid.Column="1" FontSize="16" Content="Return To Attributes Selection" Command="{Binding ReturnToAttributesSelectionCommand}"/>
+                        </Grid>
+
+                        <Grid Grid.Row="1">
                             <DataGrid ItemsSource="{Binding SingleObjectActivitySessionListingItemViewModels}" AutoGeneratingColumn="OnAutoGeneratingColumn">
                                 <DataGrid.Resources>
                                     <Style TargetType="DataGridRow">

@@ -31,20 +31,14 @@ namespace DynamicObjectListing.Command
 
             if (_objectToDisplayModeTypeName  == "Athlete")
             {
-                //new instance of AthleteObjectListingViewModel
-                //observableCollection of Athlete objects
                 _navigationStore.CurrentViewModel = new SingleObjectAthleteListingViewModel(_navigationStore, selectedAttributes, (Athlete)_objectToDisplayModel);
             }
             else if (_objectToDisplayModeTypeName == "ActivitySession")
             {
-                //new instance of ActivitySessionObjectListingViewModel
-                //observableCollection of ActivitySession objects
                 _navigationStore.CurrentViewModel = new SingleObjectActivitySessionListingViewModel(_navigationStore, selectedAttributes, (ActivitySession)_objectToDisplayModel);
             }
             else if (_objectToDisplayModeTypeName == "Segment")
             {
-                //new instance of SegmentObjectListingViewModel
-                //observableCollection of Segment objects
                 _navigationStore.CurrentViewModel = new SingleObjectSegmentListingViewModel(_navigationStore, selectedAttributes, (Segment)_objectToDisplayModel);
             }
         }
