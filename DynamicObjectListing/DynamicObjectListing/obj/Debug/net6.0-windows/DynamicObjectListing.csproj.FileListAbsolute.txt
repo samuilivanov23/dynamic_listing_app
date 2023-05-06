@@ -107,3 +107,9 @@ C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectList
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\DynamicObjectListing.Migrations.InitialCreateMigration.resources
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\DynamicObjectListing.csproj.GenerateResource.cache
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\CustomWindow\ActivitySessionObjectFullData.g.cs
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\CustomWindow\AthleteObjectFullDetails.g.cs
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\CustomWindow\SegmentObjectFullDetails.g.cs
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\CustomWindow\ActivitySessionObjectFullData.baml
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\CustomWindow\AthleteObjectFullDetails.baml
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\CustomWindow\SegmentObjectFullDetails.baml

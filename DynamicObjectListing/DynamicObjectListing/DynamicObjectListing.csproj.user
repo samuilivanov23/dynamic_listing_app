@@ -13,6 +13,15 @@
     <Compile Update="Components\ObjectsListing.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CustomWindow\ActivitySessionObjectFullData.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CustomWindow\AthleteObjectFullDetails.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CustomWindow\SegmentObjectFullDetails.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\AttributesSelectionView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +43,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\ObjectsListing.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomWindow\ActivitySessionObjectFullData.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomWindow\AthleteObjectFullDetails.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomWindow\SegmentObjectFullDetails.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

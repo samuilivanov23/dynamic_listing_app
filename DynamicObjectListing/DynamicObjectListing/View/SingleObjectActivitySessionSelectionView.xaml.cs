@@ -1,4 +1,5 @@
-﻿using DynamicObjectListing.ViewModel;
+﻿using DynamicObjectListing.CustomWindow;
+using DynamicObjectListing.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,6 +38,14 @@ namespace DynamicObjectListing.View
             {
                 e.Cancel = true;
             }
+        }
+
+        private void DataGridRow_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            var activitySessionRow = e.Source as DataGridRow;
+
+            ActivitySessionObjectFullData activitySessionObjectFullDetailsWindow = new ActivitySessionObjectFullData(activitySessionRow.Item);
+            activitySessionObjectFullDetailsWindow.Show();
         }
     }
 }

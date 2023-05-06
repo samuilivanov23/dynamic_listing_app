@@ -1,4 +1,4 @@
-﻿C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+﻿
 FC:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\App.xaml;;
 FC:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\Components\AttributesListing.xaml;;
 FC:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\Components\ObjectsListing.xaml;;
@@ -8,4 +8,7 @@ FC:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectLis
 FC:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\View\SingleObjectActivitySessionSelectionView.xaml;;
 FC:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\View\SingleObjectAthleteSelectionView.xaml;;
 FC:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\View\SingleObjectSegmentSelectionView.xaml;;
+FC:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\CustomWindow\ActivitySessionObjectFullData.xaml;;
+FC:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\CustomWindow\AthleteObjectFullDetails.xaml;;
+FC:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\CustomWindow\SegmentObjectFullDetails.xaml;;
 
