@@ -33,13 +33,13 @@ namespace DynamicObjectListing.Command
             {
                 //new instance of AthleteObjectListingViewModel
                 //observableCollection of Athlete objects
-                _navigationStore.CurrentViewModel = new SingleObjectListingViewModel(_navigationStore, selectedAttributes, (Athlete)_objectToDisplayModel);
+                _navigationStore.CurrentViewModel = new SingleObjectAthleteListingViewModel(_navigationStore, selectedAttributes, (Athlete)_objectToDisplayModel);
             }
             else if (_objectToDisplayModeTypeName == "ActivitySession")
             {
                 //new instance of ActivitySessionObjectListingViewModel
                 //observableCollection of ActivitySession objects
-                _navigationStore.CurrentViewModel = new SingleObjectListingViewModel(_navigationStore, selectedAttributes, (ActivitySession)_objectToDisplayModel);
+                _navigationStore.CurrentViewModel = new SingleObjectActivitySessionListingViewModel(_navigationStore, selectedAttributes, (ActivitySession)_objectToDisplayModel);
             }
             else if (_objectToDisplayModeTypeName == "Segment")
             {
@@ -47,8 +47,6 @@ namespace DynamicObjectListing.Command
                 //observableCollection of Segment objects
                 _navigationStore.CurrentViewModel = new SingleObjectSegmentListingViewModel(_navigationStore, selectedAttributes, (Segment)_objectToDisplayModel);
             }
-
-            //_navigationStore.CurrentViewModel = new SingleObjectSelectionViewModel(_navigationStore, selectedAttributes, _objectToDisplayModel);
         }
     }
 }

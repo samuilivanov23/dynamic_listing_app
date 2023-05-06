@@ -19,6 +19,20 @@ namespace DynamicObjectListing.Model
         public int ActivitiesCount { get; set; }
         public int Followers { get; set; }
         public int Following { get; set; }
+
+        public Athlete() { }
+
+        public Athlete(Int64 id, string firstName, string middleName, string lastName, int activitiesCount, int followers, int following)
+        {
+            this.Id = id;
+            this.FirstName = firstName;
+            this.MiddleName = middleName;
+            this.LastName = lastName;
+            this.ActivitiesCount = activitiesCount;
+            this.Followers = followers;
+            this.Following = following;
+        }
+
         public override string ToString()
         {
             return FirstName + LastName + ", Activities Count: " + ActivitiesCount + ", Followers: " + Followers + ", Following: " + Following;

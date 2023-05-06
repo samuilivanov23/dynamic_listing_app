@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace DynamicObjectListing.ViewModel
 {
+    //potentially for remove
     public class SingleObjectListingItemViewModel : BaseViewModel
     {
         public IBaseModel baseModelToDisplay { get; set; }

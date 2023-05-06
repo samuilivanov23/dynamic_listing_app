@@ -17,7 +17,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Column="0" FontSize="32" Text="Single Object Listing" />
+            <TextBlock Grid.Column="0" FontSize="32" Text="Segment Object Listing" />
         </Grid>
 
         <Grid Grid.Row="1" Margin="0 20 0 0">
@@ -44,8 +44,7 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
 
-                            <!--<Button Grid.Column="0" FontSize="16" Content="Continue To Object Attributes" Command="{Binding ContinueToObjectAttributesCommand}" CommandParameter="{Binding ElementName=objectListToDisplay, Path=SelectedItem}" />-->
-                            <Button Grid.Column="0" FontSize="16" Content="Display Full Object Data" Command="{Binding ContinueToSingleObjectDisplayFullDataCommand}"/>
+                            <Button Grid.Column="0" FontSize="16" Content="Display Full Object Data" Command="{Binding ContinueToSegmentObjectDisplayFullDataCommand}"/>
                         </Grid>
 
                         <Grid Grid.Row="1">

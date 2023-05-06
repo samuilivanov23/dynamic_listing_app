@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace DynamicObjectListing.ViewModel
 {
+    //potentially for remove
     public class SingleObjectListingViewModel : BaseViewModel
     {
         private readonly ObservableCollection<IBaseModel> _singleObjectListingItemViewModels;
@@ -42,14 +43,6 @@ namespace DynamicObjectListing.ViewModel
                 _singleObjectListingItemViewModels.Add(new Segment(3, 14.4, 22, "start3", "end3"));
                 _singleObjectListingItemViewModels.Add(new Segment(4, 15.4, 23, "start4", "end4"));
             }
-
-            for (int i = 0; i < 3; i++) 
-            {
-                //_singleObjectListingItemViewModels.Add();
-            }
-            //_singleObjectListingItemViewModels.Add();
-            //_singleObjectListingItemViewModels.Add();
-            //_singleObjectListingItemViewModels.Add();
         }
     }
 }
