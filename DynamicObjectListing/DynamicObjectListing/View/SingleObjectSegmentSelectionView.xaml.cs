@@ -23,15 +23,24 @@ namespace DynamicObjectListing.View
     /// </summary>
     public partial class SingleObjectSegmentSelectionView : UserControl
     {
+        private Dictionary<string, string> propertyNameToHeaderMapping;
         public SingleObjectSegmentSelectionView()
         {
             InitializeComponent();
+            propertyNameToHeaderMapping = new Dictionary<string, string>()
+            {
+                { "Id", "Id" },
+                { "Length", "Length of the Segment (m)" },
+                { "BestEffortTimeMinutes", "Best Effor Time (min)" },
+                { "StartLocation", "Start Location Name" },
+                { "EndLocation", "End Location Name" }
+            };
         }
 
         private void OnAutoGeneratingColumn(Object sender, DataGridAutoGeneratingColumnEventArgs e) 
         {
             PropertyDescriptor propertyDescriptor = (PropertyDescriptor)e.PropertyDescriptor;
-            e.Column.Header = propertyDescriptor.DisplayName;
+            e.Column.Header = this.propertyNameToHeaderMapping[propertyDescriptor.DisplayName];
             var viewModel = (SingleObjectSegmentListingViewModel)this.DataContext;
 
             if (!viewModel.SelectedAttributes.Any(x => x.AttributeName == propertyDescriptor.DisplayName)) 

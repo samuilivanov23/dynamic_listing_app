@@ -23,15 +23,26 @@ namespace DynamicObjectListing.View
     /// </summary>
     public partial class SingleObjectActivitySessionSelectionView : UserControl
     {
+        private Dictionary<string, string> propertyNameToHeaderMapping;
         public SingleObjectActivitySessionSelectionView()
         {
             InitializeComponent();
+            propertyNameToHeaderMapping = new Dictionary<string, string>()
+            {
+                { "Id", "Id" },
+                { "Distance", "Distance (m)" },
+                { "ElevationGain", "Elevation Gain (m)" },
+                { "MaxElevation", "Max Elevation reached (m)" },
+                { "TimeMovingMinutes", "Time Moving (m)" },
+                { "TotalTimeMinutes", "Total Time (m)" },
+                { "KudosCount", "Kudos (count)" }
+            };
         }
 
         private void OnAutoGeneratingColumn(Object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
             PropertyDescriptor propertyDescriptor = (PropertyDescriptor)e.PropertyDescriptor;
-            e.Column.Header = propertyDescriptor.DisplayName;
+            e.Column.Header = this.propertyNameToHeaderMapping[propertyDescriptor.DisplayName];
             var viewModel = (SingleObjectActivitySessionListingViewModel)this.DataContext;
 
             if (!viewModel.SelectedAttributes.Any(x => x.AttributeName == propertyDescriptor.DisplayName))

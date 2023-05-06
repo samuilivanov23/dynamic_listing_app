@@ -23,15 +23,26 @@ namespace DynamicObjectListing.View
     /// </summary>
     public partial class SingleObjectAthleteSelectionView : UserControl
     {
+        private Dictionary<string, string> propertyNameToHeaderMapping;
         public SingleObjectAthleteSelectionView()
         {
             InitializeComponent();
+            propertyNameToHeaderMapping = new Dictionary<string, string>()
+            {
+                { "Id", "Id" },
+                { "FirstName", "First Name" },
+                { "MiddleName", "Middle Name" },
+                { "LastName", "Last Name" },
+                { "ActivitiesCount", "Activities Count" },
+                { "Following", "Following (count)" },
+                { "Followers", "Followers (count)" }
+            };
         }
 
         private void OnAutoGeneratingColumn(Object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
             PropertyDescriptor propertyDescriptor = (PropertyDescriptor)e.PropertyDescriptor;
-            e.Column.Header = propertyDescriptor.DisplayName;
+            e.Column.Header = this.propertyNameToHeaderMapping[propertyDescriptor.DisplayName];
             var viewModel = (SingleObjectAthleteListingViewModel)this.DataContext;
 
             if (!viewModel.SelectedAttributes.Any(x => x.AttributeName == propertyDescriptor.DisplayName))
