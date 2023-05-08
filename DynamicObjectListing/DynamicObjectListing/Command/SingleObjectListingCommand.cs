@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace DynamicObjectListing.Command
 {
@@ -27,19 +28,32 @@ namespace DynamicObjectListing.Command
         {
             ObservableCollection<AttributesListingItemViewModel> selectedAttributes = new ObservableCollection<AttributesListingItemViewModel>(_attributesListingItemViewModels.Where(attr => attr.IsAttributeSelectedForDisplay == true).ToList());
 
-            var _objectToDisplayModeTypeName = _objectToDisplayModel.GetType().Name;
+            if (selectedAttributes.Count > 0)
+            {
+                var _objectToDisplayModeTypeName = _objectToDisplayModel.GetType().Name;
 
-            if (_objectToDisplayModeTypeName  == "Athlete")
-            {
-                _navigationStore.CurrentViewModel = new SingleObjectAthleteListingViewModel(_navigationStore, selectedAttributes, (Athlete)_objectToDisplayModel);
+                if (_objectToDisplayModeTypeName == "Athlete")
+                {
+                    _navigationStore.CurrentViewModel = new SingleObjectAthleteListingViewModel(_navigationStore, selectedAttributes, (Athlete)_objectToDisplayModel);
+                }
+                else if (_objectToDisplayModeTypeName == "ActivitySession")
+                {
+                    _navigationStore.CurrentViewModel = new SingleObjectActivitySessionListingViewModel(_navigationStore, selectedAttributes, (ActivitySession)_objectToDisplayModel);
+                }
+                else if (_objectToDisplayModeTypeName == "Segment")
+                {
+                    _navigationStore.CurrentViewModel = new SingleObjectSegmentListingViewModel(_navigationStore, selectedAttributes, (Segment)_objectToDisplayModel);
+                }
             }
-            else if (_objectToDisplayModeTypeName == "ActivitySession")
+            else 
             {
-                _navigationStore.CurrentViewModel = new SingleObjectActivitySessionListingViewModel(_navigationStore, selectedAttributes, (ActivitySession)_objectToDisplayModel);
-            }
-            else if (_objectToDisplayModeTypeName == "Segment")
-            {
-                _navigationStore.CurrentViewModel = new SingleObjectSegmentListingViewModel(_navigationStore, selectedAttributes, (Segment)_objectToDisplayModel);
+                string messageBoxText = "Please at least one attribute to continue!";
+                string caption = "No Attribute Selection Message";
+                MessageBoxButton button = MessageBoxButton.OK;
+                MessageBoxImage icon = MessageBoxImage.Warning;
+                MessageBoxResult result;
+
+                result = MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.Yes);
             }
         }
     }
