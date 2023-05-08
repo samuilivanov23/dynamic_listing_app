@@ -53,7 +53,6 @@ namespace DynamicObjectListing.InstantiationManager
             {
                 if (type.GetInterfaces().Any(t => t.IsGenericType && t.GetGenericTypeDefinition() == typeof(ICreator<>)))
                 {
-                    //var newInstance = Activator.CreateInstance(type);
                     var newInstance = Activator.CreateInstance(type);
 
                     var createMethod = type.GetMethod(nameof(AthleteCreator.Create));
