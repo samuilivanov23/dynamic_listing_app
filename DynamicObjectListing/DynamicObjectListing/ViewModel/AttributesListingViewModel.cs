@@ -23,9 +23,9 @@ namespace DynamicObjectListing.ViewModel
         {
             _attributesListingItemViewModels = new ObservableCollection<AttributesListingItemViewModel>();
 
-            foreach (var attribute in objectToDisplayAllAttributes) 
+            foreach (var attributeName in objectToDisplayAllAttributes) 
             {
-                _attributesListingItemViewModels.Add(new AttributesListingItemViewModel(attribute, false));
+                _attributesListingItemViewModels.Add(new AttributesListingItemViewModel(attributeName, false));
             }
 
             ContinueToSingleObjectListCommand = new SingleObjectListingCommand(navigationStore, _attributesListingItemViewModels, objectToDisplayModel);

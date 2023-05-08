@@ -10,7 +10,7 @@ namespace DynamicObjectListing.InstantiationManager
     public class SegmentCreator : ICreator<Segment>
     {
         public SegmentCreator() { }
-        public bool CanHandle(string type) { return "segments" == type; }
+        public bool CanHandle(string type) { return "Segment" == type; }
         public Segment Create() { return new Segment(); }
     }
 }

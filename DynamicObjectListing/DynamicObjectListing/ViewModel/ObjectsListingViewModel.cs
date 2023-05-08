@@ -1,4 +1,5 @@
 ﻿using DynamicObjectListing.Command;
+using DynamicObjectListing.InstantiationManager;
 using DynamicObjectListing.Store;
 using System;
 using System.Collections.Generic;
@@ -20,9 +21,12 @@ namespace DynamicObjectListing.ViewModel
         {
             _objectsListingItemViewModels = new ObservableCollection<ObjectsListingItemViewModel>();
 
-            _objectsListingItemViewModels.Add(new ObjectsListingItemViewModel("athletes", false));
-            _objectsListingItemViewModels.Add(new ObjectsListingItemViewModel("activities", false));
-            _objectsListingItemViewModels.Add(new ObjectsListingItemViewModel("segments", false));
+            var currentlyAvailableObjectTypes = InstanceMapperToModels.GetAllCurrentlyAvailableObjectTypes();
+
+            foreach(var availableObjectType in currentlyAvailableObjectTypes) 
+            {
+                _objectsListingItemViewModels.Add(new ObjectsListingItemViewModel(availableObjectType, false));
+            }
 
             ContinueToObjectAttributesCommand = new NavigateCommand(navigationStore);
         }

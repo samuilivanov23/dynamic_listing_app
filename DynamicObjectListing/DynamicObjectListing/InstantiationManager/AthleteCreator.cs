@@ -10,7 +10,7 @@ namespace DynamicObjectListing.InstantiationManager
     public class AthleteCreator : ICreator<Athlete>
     {
         public AthleteCreator() { }
-        public bool CanHandle(string type) { return "athletes" == type; }
+        public bool CanHandle(string type) { return "Athlete" == type; }
         public Athlete Create() { return new Athlete(); }
     }
 }

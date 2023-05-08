@@ -10,7 +10,7 @@ namespace DynamicObjectListing.InstantiationManager
     public class ActivitySessionCreator : ICreator<ActivitySession>
     {
         public ActivitySessionCreator() { }
-        public bool CanHandle(string type) { return "activities" == type; }
+        public bool CanHandle(string type) { return "ActivitySession" == type; }
         public ActivitySession Create() { return new ActivitySession(); }
     }
 }
