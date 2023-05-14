@@ -22,6 +22,9 @@
     <Compile Update="CustomWindow\SegmentObjectFullDetails.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CustomWindow\SessionAnalysisObjectFullDetails.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\AttributesSelectionView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -35,6 +38,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\SingleObjectSegmentSelectionView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SingleObjectSessionAnalysisSelectionView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -54,6 +60,9 @@
     <Page Update="CustomWindow\SegmentObjectFullDetails.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="CustomWindow\SessionAnalysisObjectFullDetails.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -70,6 +79,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\SingleObjectSegmentSelectionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SingleObjectSessionAnalysisSelectionView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

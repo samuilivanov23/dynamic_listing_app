@@ -14,5 +14,6 @@ namespace DynamicObjectListing.Model
         public DbSet<Athlete> Athletes { get; set; }
         public DbSet<ActivitySession> ActivitySessions { get; set; }
         public DbSet<Segment> Segments { get; set; }
+        public DbSet<SessionAnalysis> SessionAnalyses { get; set; }
     }
 }
