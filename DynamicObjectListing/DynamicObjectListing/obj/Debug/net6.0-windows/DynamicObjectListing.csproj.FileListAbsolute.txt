@@ -113,3 +113,8 @@ C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectList
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\CustomWindow\ActivitySessionObjectFullData.baml
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\CustomWindow\AthleteObjectFullDetails.baml
 C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\CustomWindow\SegmentObjectFullDetails.baml
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\DynamicObjectListing.Migrations.adding_session_analysis_table.resources
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\View\SingleObjectSessionAnalysisSelectionView.g.cs
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\CustomWindow\SessionAnalysisObjectFullDetails.g.cs
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\View\SingleObjectSessionAnalysisSelectionView.baml
+C:\Users\Samuil Ivanov\PS_Coruse_Project2\DynamicObjectListing\DynamicObjectListing\obj\Debug\net6.0-windows\CustomWindow\SessionAnalysisObjectFullDetails.baml

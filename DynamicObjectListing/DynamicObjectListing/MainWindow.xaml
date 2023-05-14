@@ -26,6 +26,9 @@
             <DataTemplate DataType="{x:Type vms:SingleObjectActivitySessionListingViewModel}">
                 <view:SingleObjectActivitySessionSelectionView />
             </DataTemplate>
+            <DataTemplate DataType="{x:Type vms:SingleObjectSessionAnalysisListingViewModel}">
+                <view:SingleObjectSessionAnalysisSelectionView />
+            </DataTemplate>
         </Grid.Resources>
 
         <ContentControl Content="{Binding CurrentViewModel}" />

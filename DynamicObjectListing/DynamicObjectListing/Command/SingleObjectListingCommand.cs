@@ -44,6 +44,10 @@ namespace DynamicObjectListing.Command
                 {
                     _navigationStore.CurrentViewModel = new SingleObjectSegmentListingViewModel(_navigationStore, selectedAttributes, (Segment)_objectToDisplayModel);
                 }
+                else if (_objectToDisplayModeTypeName == "SessionAnalysis")
+                {
+                    _navigationStore.CurrentViewModel = new SingleObjectSessionAnalysisListingViewModel(_navigationStore, selectedAttributes, (SessionAnalysis)_objectToDisplayModel);
+                }
             }
             else 
             {

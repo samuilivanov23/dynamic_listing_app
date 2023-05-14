@@ -28,5 +28,9 @@ namespace DynamicObjectListing.Model.Databse
         {
             return DbContext.Segments.ToList();
         }
+        public List<SessionAnalysis> GetSessionAnalyses()
+        {
+            return DbContext.SessionAnalyses.ToList();
+        }
     }
 }
